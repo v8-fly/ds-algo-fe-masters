@@ -1,7 +1,8 @@
 const headerName = "BINARY SEARCH"
 const title = document.getElementById("title")
+const timeComplexityDiv = document.getElementById("O(n)")
 title.innerHTML = `<h1>${headerName}</h1>`
-// console.log(";HArdik")
+let timeComplexity
 
 /*
 
@@ -12,6 +13,9 @@ Remember if we perform halfing in solution
 its either logn or nLogn 
 
 */
+
+timeComplexity = "O(logn) - we do halfing"
+timeComplexityDiv.innerHTML = `<h1>${timeComplexity}</h1>`
 
 const binarySearch = (array, toFind) => {
   let low = 0
